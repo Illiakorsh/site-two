@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Водолазні роботи по всій Україні — Пошук, підйом, огляд, очищення</title>
+<meta name="description" content="Повний спектр підводних (водолазних) робіт: пошук і підйом затонулих предметів, огляд і обслуговування гідроспоруд, підводна зйомка, різання та зварювання. Виїзд по всій Україні." />
+<meta name="keywords" content="водолазні роботи, підводні роботи, пошук під водою, підйом предметів, очищення дна, огляд гідроспоруд, підводна зйомка, Київ, Україна" />
+<meta property="og:title" content="Водолазні роботи по всій Україні" />
+<meta property="og:description" content="Пошук і підйом, огляд, очищення, ремонт. Працюємо по всій Україні." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/photo01.jpg" />
+<meta name="theme-color" content="#0a2540" />
+<style>
+:root{
+--bg:#ffffff;
+--text:#0a2540; /* глибокий морський синій */
+--muted:#5b708b;
+--accent:#11b3c5; /* бірюза */
+--accent-2:#0e7490; /* темніший акцент */
+--card:#f5f8fb;
+--ring:rgba(17,179,197,.2);
+--shadow:0 10px 30px rgba(10,37,64,.15);
+--radius:18px;
+}
+html,body{height:100%}
+body{
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Noto Sans,Arial,sans-serif;
+color:var(--text);
+background:var(--bg);
+line-height:1.6;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+.container{width:min(1120px, 92vw); margin-inline:auto}
+header{
+position:relative;
+background:linear-gradient(135deg, #0a2540 0%, #0f3d57 50%, #11b3c5 100%);
+color:#fff;
+overflow:hidden;
+}
+.hero{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; padding:80px 0}
+.hero h1{font-size:clamp(28px, 5vw, 52px); line-height:1.1; margin:0 0 14px}
+.hero p{font-size:clamp(16px, 1.6vw, 20px); opacity:.95; margin:0 0 24px}
+.badges{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
+.badge{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); padding:8px 12px; border-radius:999px; font-size:14px}
+.hero-card{
+background:#ffffff10;
+border:1px solid #ffffff30;
+border-radius:var(--radius);
+padding:22px;
+box-shadow:var(--shadow);
+backdrop-filter: blur(4px);
+}
+.hero-card h3{margin:0 0 10px; font-size:20px}
+.hero-card ul{margin:0; padding-left:18px}
+.section{padding:64px 0}
+.section h2{font-size:clamp(24px, 3vw, 34px); margin:0 0 14px}
+.lead{color:var(--muted); margin:0 0 22px}
+
+
+/* Сітка послуг */
+.grid{display:grid; gap:18px}
+.grid.cols-3{grid-template-columns:repeat(3, 1fr)}
+.grid.cols-4{grid-template-columns:repeat(4, 1fr)}
+@media (max-width:1000px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:repeat(2,1fr)}.grid.cols-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
+
+
+.card{
+background:var(--card);
+border:1px solid #e7edf5;
+border-radius:var(--radius);
+padding:18px;
+box-shadow:var(--shadow);
+}
+.card h3{margin:0 0 8px; font-size:18px}
+.card p{margin:0}
+
+
+/* Галерея */
+.gallery{display:grid; grid-template-columns:repeat(6,1fr); gap:8px}
+.gallery figure{margin:0; background:#fff; border-radius:12px; overflow:hidden; border:1px solid #e7edf5}
+.gallery img{width:100%; height:160px; object-fit:cover; display:block}
+.gallery figcaption{font-size:12px; padding:6px 8px; color:#5b708b}
+@media (max-width:1200px){.gallery{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:800px){.gallery{grid-template-columns:repeat(3,1fr)} .gallery img{height:140px}}
+@media (max-width:540px){.gallery{grid-template-columns:repeat(2,1fr)} .gallery img{height:120px}}
+
+
+/* Інфо блоки */
+.pill-list{display:flex; flex-wrap:wrap; gap:10px}
+.pill{background:#e7f9fc; border:1px solid var(--ring); color:#0e4c5b; padding:8px 12px; border-radius:999px; font-size:14px}
+
+
+/* Ціни */
+.price{background:linear-gradient( to right, #eaf7fb 0%, #f7fbfd 100%); border:1px solid #dbe9f0; border-radius:var(--radius); padding:18px}
+
+
+footer{padding:36px 0 56px; background:#0f1622; color:#b5c0cf}
+footer .muted{color:#92a2b6}
+.brand{font-weight:700; letter-spacing:.5px}
+
+
+/* Дрібниці */
+.check{display:inline-block; width:18px; height:18px; border-radius:4px; background:var(--accent); box-shadow:inset 0 0 0 4px #fff; margin-right:8px; vertical-align:-3px}
+.row{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+@media (max-width:900px){.row{grid-template-columns:1fr}}
+
+
+/* Друковані стилі */
+@media print{ .hero, .gallery img{filter:grayscale(1)} }
+</style>
+</head>
+<body>
+<header>
+<div class="container hero">
+<div>
+<div class="brand" aria-label="Назва сайту">Водолазні роботи • Україна</div>
+<h1>Підводні роботи будь‑якої складності</h1>
+<p>Пошук і підйом затонулих предметів, обстеження акваторій та гідроспоруд, очистка дна, підводна зйомка, різання та інші задачі. Працюємо в Києві та області з виїздом по всій Україні.</p>
