@@ -1,122 +1,288 @@
 <!doctype html>
 <html lang="uk">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Водолазні роботи по всій Україні — Пошук, підйом, огляд, очищення</title>
-<meta name="description" content="Повний спектр підводних (водолазних) робіт: пошук і підйом затонулих предметів, огляд і обслуговування гідроспоруд, підводна зйомка, різання та зварювання. Виїзд по всій Україні." />
-<meta name="keywords" content="водолазні роботи, підводні роботи, пошук під водою, підйом предметів, очищення дна, огляд гідроспоруд, підводна зйомка, Київ, Україна" />
-<meta property="og:title" content="Водолазні роботи по всій Україні" />
-<meta property="og:description" content="Пошук і підйом, огляд, очищення, ремонт. Працюємо по всій Україні." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="images/photo01.jpg" />
-<meta name="theme-color" content="#0a2540" />
-<style>
-:root{
---bg:#ffffff;
---text:#0a2540; /* глибокий морський синій */
---muted:#5b708b;
---accent:#11b3c5; /* бірюза */
---accent-2:#0e7490; /* темніший акцент */
---card:#f5f8fb;
---ring:rgba(17,179,197,.2);
---shadow:0 10px 30px rgba(10,37,64,.15);
---radius:18px;
+  <meta name="description" content="Повний спектр підводних (водолазних) робіт: пошук і підйом затонулих предметів, огляд і обслуговування гідроспоруд, підводна зйомка, різання та зварювання. Виїзд по всій Україні." />
+  <meta name="keywords" content="водолазні роботи, підводні роботи, пошук під водою, підйом предметів, очищення дна, огляд гідроспоруд, підводна зйомка, Київ, Україна" />
+  <meta property="og:title" content="Водолазні роботи по всій Україні" />
+  <meta property="og:description" content="Пошук і підйом, огляд, очищення, ремонт. Працюємо по всій Україні." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/photo01.jpg" />
+  <meta name="theme-color" content="#0a2540" />
+  <style>
+    :root{
+    --bg:#ffffff;
+    --text:#0a2540; /* глибокий морський синій */
+    --muted:#5b708b;
+    --accent:#11b3c5; /* бірюза */
+    --accent-2:#0e7490; /* темніший акцент */
+    --card:#f5f8fb;
+    --ring:rgba(17,179,197,.2);
+    --shadow:0 10px 30px rgba(10,37,64,.15);
+    --radius:18px;
 }
 html,body{height:100%}
 body{
-margin:0;
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Noto Sans,Arial,sans-serif;
-color:var(--text);
-background:var(--bg);
-line-height:1.6;
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Noto Sans,Arial,sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
-.container{width:min(1120px, 92vw); margin-inline:auto}
+    .container{width:min(1120px, 92vw); margin-inline:auto}
 header{
-position:relative;
-background:linear-gradient(135deg, #0a2540 0%, #0f3d57 50%, #11b3c5 100%);
-color:#fff;
-overflow:hidden;
+    position:relative;
+    background:linear-gradient(135deg, #0a2540 0%, #0f3d57 50%, #11b3c5 100%);
+    color:#fff;
+    overflow:hidden;
 }
-.hero{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; padding:80px 0}
-.hero h1{font-size:clamp(28px, 5vw, 52px); line-height:1.1; margin:0 0 14px}
-.hero p{font-size:clamp(16px, 1.6vw, 20px); opacity:.95; margin:0 0 24px}
-.badges{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
-.badge{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); padding:8px 12px; border-radius:999px; font-size:14px}
-.hero-card{
-background:#ffffff10;
-border:1px solid #ffffff30;
-border-radius:var(--radius);
-padding:22px;
-box-shadow:var(--shadow);
-backdrop-filter: blur(4px);
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; padding:80px 0}
+    .hero h1{font-size:clamp(28px, 5vw, 52px); line-height:1.1; margin:0 0 14px}
+        .hero p{font-size:clamp(16px, 1.6vw, 20px); opacity:.95; margin:0 0 24px}
+        .badges{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
+    .badge{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); padding:8px 12px; border-radius:999px; font-size:14px}
+    .hero-card{
+    background:#ffffff10;
+    border:1px solid #ffffff30;
+    border-radius:var(--radius);
+    padding:22px;
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(4px);
 }
-.hero-card h3{margin:0 0 10px; font-size:20px}
-.hero-card ul{margin:0; padding-left:18px}
-.section{padding:64px 0}
-.section h2{font-size:clamp(24px, 3vw, 34px); margin:0 0 14px}
-.lead{color:var(--muted); margin:0 0 22px}
-
+    .hero-card h3{margin:0 0 10px; font-size:20px}
+        .hero-card ul{margin:0; padding-left:18px}
+        .section{padding:64px 0}
+    .section h2{font-size:clamp(24px, 3vw, 34px); margin:0 0 14px}
+        .lead{color:var(--muted); margin:0 0 22px}
 
 /* Сітка послуг */
-.grid{display:grid; gap:18px}
-.grid.cols-3{grid-template-columns:repeat(3, 1fr)}
-.grid.cols-4{grid-template-columns:repeat(4, 1fr)}
+    .grid{display:grid; gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3, 1fr)}
+        .grid.cols-4{grid-template-columns:repeat(4, 1fr)}
 @media (max-width:1000px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:repeat(2,1fr)}.grid.cols-4{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
 
-
-.card{
-background:var(--card);
-border:1px solid #e7edf5;
-border-radius:var(--radius);
-padding:18px;
-box-shadow:var(--shadow);
+        .card{
+    background:var(--card);
+    border:1px solid #e7edf5;
+    border-radius:var(--radius);
+    padding:18px;
+    box-shadow:var(--shadow);
 }
-.card h3{margin:0 0 8px; font-size:18px}
-.card p{margin:0}
+    .card h3{margin:0 0 8px; font-size:18px}
+        .card p{margin:0}
 
-
-/* Галерея */
-.gallery{display:grid; grid-template-columns:repeat(6,1fr); gap:8px}
-.gallery figure{margin:0; background:#fff; border-radius:12px; overflow:hidden; border:1px solid #e7edf5}
-.gallery img{width:100%; height:160px; object-fit:cover; display:block}
-.gallery figcaption{font-size:12px; padding:6px 8px; color:#5b708b}
+        /* Галерея */
+        .gallery{display:grid; grid-template-columns:repeat(6,1fr); gap:8px}
+    .gallery figure{margin:0; background:#fff; border-radius:12px; overflow:hidden; border:1px solid #e7edf5}
+        .gallery img{width:100%; height:160px; object-fit:cover; display:block}
+        .gallery figcaption{font-size:12px; padding:6px 8px; color:#5b708b}
 @media (max-width:1200px){.gallery{grid-template-columns:repeat(4,1fr)}}
 @media (max-width:800px){.gallery{grid-template-columns:repeat(3,1fr)} .gallery img{height:140px}}
 @media (max-width:540px){.gallery{grid-template-columns:repeat(2,1fr)} .gallery img{height:120px}}
 
-
-/* Інфо блоки */
-.pill-list{display:flex; flex-wrap:wrap; gap:10px}
-.pill{background:#e7f9fc; border:1px solid var(--ring); color:#0e4c5b; padding:8px 12px; border-radius:999px; font-size:14px}
-
+        /* Інфо блоки */
+        .pill-list{display:flex; flex-wrap:wrap; gap:10px}
+    .pill{background:#e7f9fc; border:1px solid var(--ring); color:#0e4c5b; padding:8px 12px; border-radius:999px; font-size:14px}
 
 /* Ціни */
-.price{background:linear-gradient( to right, #eaf7fb 0%, #f7fbfd 100%); border:1px solid #dbe9f0; border-radius:var(--radius); padding:18px}
-
+    .price{background:linear-gradient( to right, #eaf7fb 0%, #f7fbfd 100%); border:1px solid #dbe9f0; border-radius:var(--radius); padding:18px}
 
 footer{padding:36px 0 56px; background:#0f1622; color:#b5c0cf}
-footer .muted{color:#92a2b6}
-.brand{font-weight:700; letter-spacing:.5px}
-
+    footer .muted{color:#92a2b6}
+    .brand{font-weight:700; letter-spacing:.5px}
 
 /* Дрібниці */
-.check{display:inline-block; width:18px; height:18px; border-radius:4px; background:var(--accent); box-shadow:inset 0 0 0 4px #fff; margin-right:8px; vertical-align:-3px}
-.row{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .check{display:inline-block; width:18px; height:18px; border-radius:4px; background:var(--accent); box-shadow:inset 0 0 0 4px #fff; margin-right:8px; vertical-align:-3px}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:18px}
 @media (max-width:900px){.row{grid-template-columns:1fr}}
-
 
 /* Друковані стилі */
 @media print{ .hero, .gallery img{filter:grayscale(1)} }
-</style>
+  </style>
 </head>
 <body>
-<header>
-<div class="container hero">
-<div>
-<div class="brand" aria-label="Назва сайту">Водолазні роботи • Україна</div>
+  <header>
+    <div class="container hero">
+      <div>
+        <div class="brand" aria-label="Назва сайту">Водолазні роботи • Україна</div>
 <h1>Підводні роботи будь‑якої складності</h1>
 <p>Пошук і підйом затонулих предметів, обстеження акваторій та гідроспоруд, очистка дна, підводна зйомка, різання та інші задачі. Працюємо в Києві та області з виїздом по всій Україні.</p>
+        <div class="badges" aria-label="Ключові переваги">
+          <span class="badge">Атестований водолаз</span>
+          <span class="badge">Повний комплект спорядження</span>
+          <span class="badge">Глибина робіт до 40 м</span>
+          <span class="badge">Підйом із понтонами до 250 т*</span>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Швидко про нас">
+<h3>Що робимо</h3>
+        <ul>
+          <li><span class="check"></span> Пошук із глибинним металошукачем</li>
+          <li><span class="check"></span> Підйом від прикрас до техніки</li>
+          <li><span class="check"></span> Фото/відео‑фіксація результатів</li>
+          <li><span class="check"></span> Обслуговування та ремонт гідроспоруд</li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <!-- Послуги -->
+    <section class="section">
+      <div class="container">
+        <h2>Послуги</h2>
+        <p class="lead">Виконуємо повний спектр підводних робіт під ключ. Нижче — основні напрями, деталі узгоджуємо індивідуально.</p>
+        <div class="grid cols-3">
+          <div class="card"><h3>Пошук і підйом</h3><p>Знаходимо та піднімаємо втрачені речі: ювелірні вироби, телефони, гаджети, човни, двигуни, понтони та іншу техніку.</p></div>
+          <div class="card"><h3>Обстеження дна</h3><p>Інспекція акваторій, причалів, опор мостів, шлюзів, дамб і пірсів. Підготовка фото/відео звітів.</p></div>
+          <div class="card"><h3>Очищення водойм</h3><p>Видалення водоростей, очерету, латаття, сміття та намулу. Пилосос і ґрунтосос для донних відкладень.</p></div>
+          <div class="card"><h3>Обслуговування гідроспоруд</h3><p>Планові та аварійні роботи на причалах, дамбах, понтонах, плавзасобах. Ущільнення, дрібний ремонт.</p></div>
+          <div class="card"><h3>Підводна різка та зварювання</h3><p>Різання металевих конструкцій під водою, підготовка до демонтажу або монтажні роботи.</p></div>
+          <div class="card"><h3>Фото/відеозйомка</h3><p>Документуємо процес і результат: фото, відео, оглядові кадри для технічної та страхової звітності.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Можливості та географія -->
+    <section class="section" style="padding-top:0">
+      <div class="container row">
+        <div class="card">
+          <h3>Можливості</h3>
+          <div class="pill-list">
+            <span class="pill">Глибина до 40 м</span>
+            <span class="pill">Підйом із понтонами до 250 т*</span>
+            <span class="pill">Глибинний металошукач</span>
+            <span class="pill">Повне спорядження та страхувальні системи</span>
+            <span class="pill">Досвід робіт на річках, озерах і водоймах</span>
+          </div>
+          <p class="lead" style="margin-top:10px">*Максимальні маси — за погодженим планом підйому та умовами майданчика.</p>
+        </div>
+        <div class="card">
+          <h3>Географія</h3>
+<p>Київ і область — оперативний виїзд. Працюємо по всій Україні за попереднім погодженням.</p>
+          <div class="pill-list" style="margin-top:8px">
+            <span class="pill">Україна</span>
+            <span class="pill">Київ • Область</span>
+            <span class="pill">Виїзд 24/7 за необхідності</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Що піднімаємо -->
+    <section class="section">
+      <div class="container">
+<h2>Що піднімаємо</h2>
+        <p class="lead">Від ювелірних виробів і гаджетів — до човнів, навісних двигунів і габаритної техніки.</p>
+        <div class="grid cols-4">
+          <div class="card"><h3>Прикраси</h3><p>Обручки, ланцюжки, годинники, ключі — точний пошук у прибережній зоні й на глибині.</p></div>
+          <div class="card"><h3>Електроніка</h3><p>Телефони, планшети, ноутбуки, квадрокоптери — оперативна локалізація та підйом.</p></div>
+          <div class="card"><h3>Плавзасоби</h3><p>Човни, катери, понтони, водні мотоцикли — стабілізація, стропування, спливання.</p></div>
+          <div class="card"><h3>Авто та техніка</h3><p>Автомобілі та інші важкі об’єкти — за узгодженим проектом підйому.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Як відбувається робота -->
+    <section class="section">
+      <div class="container">
+<h2>Як ми працюємо</h2>
+        <div class="grid cols-4">
+          <div class="card"><h3>1. Звернення</h3><p>Описуєте задачу: що, де й коли було втрачено або що потрібно обстежити/очистити.</p></div>
+          <div class="card"><h3>2. Виїзд і оцінка</h3><p>Приїжджаємо на місце, проводимо розвідку, визначаємо план робіт і оснащення.</p></div>
+          <div class="card"><h3>3. Виконання</h3><p>Проводимо роботи згідно з планом і технікою безпеки. За потреби — фото/відеофіксація.</p></div>
+          <div class="card"><h3>4. Передача результату</h3><p>Звіт, рекомендації та за потреби — обслуговування чи профілактика.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ціни / Орієнтири -->
+    <section class="section">
+      <div class="container">
+        <h2>Вартість</h2>
+        <div class="price">
+          <p><strong>Орієнтири:</strong> очищення дна від <strong>50 грн/м²</strong> (залежить від глибини, заростання, доступу). Пошук і підйом — індивідуально після оцінки локації та умов.</p>
+          <p class="lead" style="margin:8px 0 0">Остаточна вартість визначається після огляду та погодження плану робіт.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея: додайте 26 власних фото в папку images/, збережіть назви -->
+    <section class="section" aria-label="Галерея виконаних робіт">
+      <div class="container">
+        <h2>Галерея</h2>
+        <p class="lead">Фрагменти процесу та результатів робіт. Замініть зразки на ваші 26 фотографій у папці <code>images/</code>.</p>
+        <div class="gallery">
+          <!-- Розмістіть свої файли у /images/photo01.jpg … /images/photo26.jpg -->
+          <figure><img loading="lazy" src="images/photo01.jpg" alt="Підводний пошук — металошукач" /><figcaption>Пошук із металошукачем</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo02.jpg" alt="Підйом затонулого човна" /><figcaption>Підйом човна</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo03.jpg" alt="Стропування понтоном" /><figcaption>Стропування понтоном</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo04.jpg" alt="Огляд опори мосту" /><figcaption>Огляд опор</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo05.jpg" alt="Очищення дна від водоростей" /><figcaption>Очищення від водоростей</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo06.jpg" alt="Підводна фото‑ та відеозйомка" /><figcaption>Фото/відео</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo07.jpg" alt="Підводна різка металу" /><figcaption>Підводна різка</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo08.jpg" alt="Робота водолаза на глибині" /><figcaption>Робота на глибині</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo09.jpg" alt="Огляд понтона та плавзасобу" /><figcaption>Обслуговування понтонів</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo10.jpg" alt="Підйом мотора з дна" /><figcaption>Підйом двигуна</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo11.jpg" alt="Огляд берегової лінії" /><figcaption>Огляд берегової лінії</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo12.jpg" alt="Дайвер готується до занурення" /><figcaption>Підготовка спорядження</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo13.jpg" alt="Пилосос для донних відкладень" /><figcaption>Донний пилосос</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo14.jpg" alt="Ремонт гідроспоруди під водою" /><figcaption>Ремонт під водою</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo15.jpg" alt="Пошук ювелірних виробів під водою" /><figcaption>Пошук прикрас</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo16.jpg" alt="Підвідна інспекція причалу" /><figcaption>Інспекція причалу</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo17.jpg" alt="Підйом понтона" /><figcaption>Підйом понтона</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo18.jpg" alt="Занурення в річці" /><figcaption>Роботи на річці</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo19.jpg" alt="Очищення акваторії від сміття" /><figcaption>Очищення сміття</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo20.jpg" alt="Підводна зварка" /><figcaption>Підводна зварка</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo21.jpg" alt="Огляд дна водойми" /><figcaption>Обстеження дна</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo22.jpg" alt="Підйом автомобіля з води" /><figcaption>Підйом авто*</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo23.jpg" alt="Суднопідіймальні понтони в роботі" /><figcaption>Суднопідіймальні понтони</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo24.jpg" alt="Звітні кадри з огляду" /><figcaption>Звітні кадри</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo25.jpg" alt="Команда на об'єкті" /><figcaption>На об'єкті</figcaption></figure>
+          <figure><img loading="lazy" src="images/photo26.jpg" alt="Результат робіт" /><figcaption>Результат</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="section">
+      <div class="container row">
+        <div class="card">
+          <h2>Контакти</h2>
+          <p class="lead">Для детальної інформації телефонуйте або пишіть. Працюємо без вихідних.</p>
+          <p><strong>Телефон:</strong> <span>06&nbsp;XXX&nbsp;XX&nbsp;66</span> <!-- Замініть на реальний номер, наприклад: 0ХХ 123 45 67 --></p>
+          <p><strong>Месенджери:</strong> Viber / Telegram / WhatsApp</p>
+          <p><strong>Місто базування:</strong> Київ (виїзд по всій Україні)</p>
+          <p class="lead" style="margin-top:8px">Російською мовою обслуговуємо також. Регістровий водолаз, є допуск до проведення підводних робіт.</p>
+        </div>
+        <div class="card">
+<h3>Поради перед зверненням</h3>
+          <ul>
+<li>Опишіть локацію та приблизне місце втрати/робіт, глибину та характер дна.</li>
+<li>Повідомте про течію, видимість у воді, наявність перешкод, доступ до берега.</li>
+<li>Підготуйте фото/відео місця, якщо є — це пришвидшить оцінку.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Водолазні роботи • Україна</strong> — пошук і підйом затонулих предметів, обстеження та обслуговування гідроспоруд, очищення акваторій.</p>
+      <p class="muted">*Підйом масивних об’єктів (у т.ч. до 250 т) можливий за наявності відповідних понтонів/оснащення та затвердженого плану робіт.
+Дані на сайті мають ознайомчий характер і не є публічною офертою.</p>
+      <p class="muted">© <span id="year"></span> Водолазні роботи. Всі права захищено.</p>
+    </div>
+        <script>
+        // Лише для оновлення року у копірайті; кнопок чи інтерактиву немає
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
