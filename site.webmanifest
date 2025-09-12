@@ -1,0 +1,10 @@
+<link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "url":"https://vodolaz-service.com.ua/",
+  "name":"Водолаз Сервіс",
+  "alternateName":"Vodolaz Service"
+}
+</script>
